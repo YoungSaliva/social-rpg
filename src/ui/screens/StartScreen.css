@@ -1,0 +1,106 @@
+.start-screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 28px calc(40px + var(--safe-bottom));
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 8%, rgba(255, 92, 138, 0.22), transparent 55%),
+    linear-gradient(180deg, #241220 0%, #2b1329 60%, #1c0f22 100%);
+}
+
+.start-screen__glow {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(242, 193, 78, 0.18), transparent 70%);
+  top: -120px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.start-screen__mark {
+  margin-bottom: 18px;
+}
+
+.start-screen__titles {
+  text-align: center;
+  max-width: 320px;
+}
+
+.start-screen__eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--color-coral);
+  margin-bottom: 10px;
+}
+
+.start-screen__title {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  color: var(--color-text-on-ink);
+}
+
+.start-screen__subtitle {
+  margin-top: 14px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--color-text-on-ink-dim);
+}
+
+.start-screen__actions {
+  margin-top: 44px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.start-screen__cta {
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 15px;
+  background: var(--color-coral);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 26px rgba(255, 92, 138, 0.35);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.start-screen__cta:active {
+  transform: scale(0.97);
+}
+
+.start-screen__secondary {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-pill);
+  padding: 14px;
+  background: transparent;
+  color: var(--color-text-on-ink);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.start-screen__footnote {
+  position: absolute;
+  bottom: calc(24px + var(--safe-bottom));
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--color-text-on-ink-dim);
+}

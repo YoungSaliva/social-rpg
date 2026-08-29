@@ -1,0 +1,20 @@
+.effect-toast {
+  position: absolute;
+  top: 82px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 20;
+}
+
+.effect-toast__chip {
+  background: var(--color-gold);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-soft);
+}

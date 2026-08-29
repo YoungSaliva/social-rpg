@@ -1,0 +1,141 @@
+.press-pass {
+  position: relative;
+  background: var(--color-paper);
+  border-radius: var(--radius-card);
+  padding: 22px 18px 16px;
+  box-shadow: var(--shadow-card);
+  color: var(--color-text-on-paper);
+}
+
+.press-pass__hole {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--color-line-on-paper);
+}
+
+.press-pass__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 14px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--color-coral-dim);
+  font-weight: 600;
+}
+
+.press-pass__body {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.press-pass__portrait {
+  flex: none;
+  background: var(--color-paper-dim);
+  border-radius: 14px;
+  padding: 4px 8px 0;
+  border: 1px solid var(--color-line-on-paper);
+}
+
+.press-pass__id {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.press-pass__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.press-pass__username {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-coral-dim);
+}
+
+.press-pass__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--color-line-on-paper);
+}
+
+.stat-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-chip__value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-ink);
+}
+
+.stat-chip__label {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-on-paper-dim);
+}
+
+.press-pass__perforation {
+  position: absolute;
+  bottom: -1px;
+  left: 12px;
+  right: 12px;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--color-line-on-paper) 0,
+    var(--color-line-on-paper) 4px,
+    transparent 4px,
+    transparent 9px
+  );
+}
+
+/* compact mode: used as the in-story HUD strip */
+.press-pass--compact {
+  padding: 10px 14px;
+  border-radius: 16px;
+}
+
+.press-pass--compact .press-pass__hole,
+.press-pass--compact .press-pass__header,
+.press-pass--compact .press-pass__perforation {
+  display: none;
+}
+
+.press-pass--compact .press-pass__body {
+  gap: 10px;
+}
+
+.press-pass--compact .press-pass__portrait {
+  border-radius: 10px;
+  padding: 2px 4px 0;
+}
+
+.press-pass--compact .press-pass__name {
+  font-size: 15px;
+}
+
+.press-pass--compact .press-pass__username {
+  font-size: 11px;
+}

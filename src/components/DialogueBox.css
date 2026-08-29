@@ -1,0 +1,46 @@
+.dialogue-box {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--color-paper);
+  color: var(--color-text-on-paper);
+  border: none;
+  border-radius: var(--radius-card);
+  padding: 18px 20px 14px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+.dialogue-box__speaker {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.dialogue-box__text {
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--color-text-on-paper);
+}
+
+.dialogue-box__text--narration {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16.5px;
+  color: var(--color-text-on-paper-dim);
+}
+
+.dialogue-box__hint {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-on-paper-dim);
+  text-align: right;
+}

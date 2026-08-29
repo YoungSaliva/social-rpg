@@ -1,0 +1,47 @@
+:root {
+  /* ---- Color: "backstage press pass" palette ---- */
+  --color-ink: #2b1329;        /* deep aubergine — base background */
+  --color-ink-2: #3a1a37;      /* lifted aubergine — panels on ink */
+  --color-paper: #fbf7f0;      /* warm paper card surface */
+  --color-paper-dim: #f0e9dd;  /* paper shadow / recessed */
+  --color-coral: #ff5c8a;      /* primary accent — energy, choices, CTA */
+  --color-coral-dim: #d43f6b;  /* pressed / hover state of coral */
+  --color-gold: #f2c14e;       /* secondary accent — fame, currency, rewards */
+  --color-ok: #5fae86;         /* positive state changes */
+  --color-warn: #e2734f;       /* negative / cost state changes */
+  --color-line: rgba(251, 247, 240, 0.16); /* hairline on ink */
+  --color-line-on-paper: rgba(43, 19, 41, 0.12);
+  --color-text-on-ink: #f6eee7;
+  --color-text-on-ink-dim: rgba(246, 238, 231, 0.64);
+  --color-text-on-paper: #2b1329;
+  --color-text-on-paper-dim: rgba(43, 19, 41, 0.6);
+
+  /* ---- Type ---- */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Work Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
+
+  /* ---- Layout ---- */
+  --radius-card: 22px;
+  --radius-pill: 999px;
+  --radius-sm: 10px;
+  --shadow-card: 0 18px 40px rgba(20, 6, 19, 0.35);
+  --shadow-soft: 0 8px 20px rgba(20, 6, 19, 0.22);
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur-med: 320ms;
+  --dur-slow: 520ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-med: 0ms;
+    --dur-slow: 0ms;
+  }
+}
